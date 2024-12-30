@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import getBaseUrl from '../../../utils/baseURL';
 const getBaseUrl = () => {
     return "http://localhost:5000"; 
 }
