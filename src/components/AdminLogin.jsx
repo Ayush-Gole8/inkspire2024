@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import axios from "axios";
-import getBaseUrl from "../utils/baseURL";
+// import getBaseUrl from "../utils/baseUrl";
 import { useNavigate } from "react-router-dom";
+const getBaseUrl = () => {
+  return "http://localhost:5000"; 
+}
 
 const AdminLogin = () => {
   const [message, setMessage] = useState("");
