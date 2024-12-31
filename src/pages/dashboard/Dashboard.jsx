@@ -2,10 +2,13 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Loading from '../../components/Loading';
-import getBaseUrl from '../../utils/baseURL';
+// import getBaseUrl from '../../utils/baseURL';
 import { MdIncompleteCircle } from 'react-icons/md'
 import RevenueChart from './RevenueChart';
 
+const getBaseUrl = () => {
+  return "http://localhost:5000"; 
+}
 const Dashboard = () => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState({});
